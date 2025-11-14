@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: sbb
+  devtools:
+    restart:
+      enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/db01
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: hm01
+    password: 1234
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true						
+  sql:
+    init:
+      mode: never
+
+# 포트 번호 변경
+server:
+  port: 8090
+
+ 
+

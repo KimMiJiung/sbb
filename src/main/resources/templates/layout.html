@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=divice-width, initial-scale=1, shrink-to-fit=no">
+	<!-- 부트 스트랩 CSS 파일 -->
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+	<title>Hello, SBB!</title>
+</head>
+<body>
+	<!-- 상단: 네비게이션 메뉴 -->
+	<nav th:replace="~{navbar :: navbarFragment}"></nav>
+	
+	<!-- 템플릿 안에 삽입할 내용 -->
+	<th:block layout:fragment="content"></th:block>
+	
+	<!-- 부트스트랩 JS 파일 맨밑에 -->
+	<script th:src="@{/js/bootstrap.min.js}"></script>
+	
+	<!-- 자바스크립트 코드 : 항상 맨 끝에 적는다. -->
+	<th:block layout:fragment="script"></th:block>
+	
+</body>
+</html>
