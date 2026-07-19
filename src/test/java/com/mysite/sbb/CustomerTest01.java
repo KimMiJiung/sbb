@@ -16,7 +16,7 @@ import com.mysite.sbb.repository.CustomerRepository01;
 
 import lombok.extern.java.Log;
 
-// [ 1. JpaRepository 인터페이스의 쿼리 메서드를 사용하는 방법 ]
+// [ 1. JpaRepository 인터페이스의 쿼리 메서드를 사용하는 방법 ] 
 @Log
 @SpringBootTest
 public class CustomerTest01 {
